@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Puslapiukas</title>
+        <link rel="stylesheet" href="style v11.css">
+        <link href="" href="style v11.css">
+
+        <style>
+        </style>
+
+    </head>
+    <body>
+        <h1>PAYMENT FORM:</h1>
+        <a>Required fields are followed by....*</a>
+        <h2>Contact information:</h2>
+            <form action="/action_page.php" method="post">
+                <fieldset>
+                    <fieldset> 
+                        <legend><p>LYTIS:</p></legend>
+                        <input type="radio" id="subject" name="subject" value="Mister">
+                        <label for="Mister">Mister</label><br>
+                        <input type="radio" id="subject" name="subject" value="Miss">
+                        <label for="Miss">Miss</label>
+                    </fieldset><br>
+
+                    <label class= "label" for="fname">Vardas:*</label>
+                    <input class= "input" type="text" id="fname" name="fname" value="" required><br>
+
+                    <label class= "label" for="lname">E.Mail:*</label>
+                    <input class= "input" type="text" id="lname" name="lname" value="" required><br>
+
+                    <label class= "label" for="lname">Slaptažodis:</label>
+                    <input class= "input" type="password" id="pasw" name="password" value=""><br>
+
+                    <h2>Payment information:</h2>
+                    <label class= "label" for="Card type:">Card type:</label>
+                    <select id="card" name="card" size="1"> 
+                        <option value="VISA">VISA</option> 
+                        <option value="MASTERCARD">MASTERCARD</option> 
+                    </select><br>
+
+                    <label  class= "label" for="Card number">Card Number:*</label>
+                    <input class= "input" type="number" id="cname" name="cname" value="" minlength="16" maxlength="16" min="16" max="16" required><br>
+
+                    <label class= "label" for="expdate">Expiration date:*</label>
+                    <input class= "input" type="month" id="expdate" name="expdate" value="" required>
+                    <p class="comment"><i><small> formatted as mm/yy</small></i></p>
+
+                    <button class="favorite styled" type="submit"> Validate the payment</button>
+            </form>
+    </body>
+</html>
